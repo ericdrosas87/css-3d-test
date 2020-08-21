@@ -1,0 +1,17 @@
+#viewport{width:1000px;height:750px;overflow:hidden;border:1px solid;position:relative;perspective:500px}
+#viewport *{transform-style:preserve-3d;box-sizing:border-box}
+#camera{width:0;height:0;position:absolute;top:50%;left:50%}
+
+/* Transitions (editable) */
+#scene,.plane,.sprite,.group{transition:.5s linear}
+
+.plane,.sprite,.group{transition:.5s}
+.triangle{clip-path:polygon(50% 0,100% 100%,0 100%);border:none}
+.triangle-bottom{clip-path:polygon(0 0,100% 0,50% 100%)}
+.triangle-left{clip-path:polygon(0 50%,100% 0,100% 100%)}
+.triangle-right{clip-path:polygon(0 0,100% 50%,0 100%)}
+.triangle-top-left{clip-path:polygon(0 0,100% 0,0 100%)}
+.triangle-top-right{clip-path:polygon(0 0,100% 0,100% 100%)}
+.triangle-bottom-left{clip-path:polygon(0 0,100% 100%,0 100%)}
+.triangle-bottom-right{clip-path:polygon(100% 0,100% 100%,0 100%)}
+.circle{border-radius:50%}
